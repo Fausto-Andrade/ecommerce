@@ -1,0 +1,11 @@
+.splide
+{
+    width: 300px;
+}
+.splide--slide
+{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

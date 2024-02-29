@@ -3,6 +3,7 @@ import InfoProduct from '../components/productIdPage/InfoProduct';
 import useFetch from '../hooks/useFetch';
 import { useParams } from 'react-router-dom';
 import Similaritems from '../components/productIdPage/Similaritems';
+import SliderImages from '../components/productIdPage/SliderImages';
 
 const ProductIdPage = () => {
 
@@ -18,11 +19,14 @@ const ProductIdPage = () => {
   return (
     <div>
       <h2>idProduct</h2>
+      <SliderImages 
+        images={productId?.images}
+      />
       <InfoProduct 
         productId={productId}
       />
       <Similaritems
-        categoryId= {productId?.categoryId}
+        categoryId={productId?.categoryId}
         prodId= {param.id}
       />
     </div>

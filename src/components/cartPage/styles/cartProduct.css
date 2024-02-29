@@ -1,0 +1,10 @@
+.cart-product
+{
+    display: flex;
+    align-items: center;
+}
+
+.cart-product figure
+{
+    width: 75px;
+}

@@ -17,15 +17,14 @@ const Similaritems = ({categoryId, prodId}) => {
         return prod.id !== +prodId;
     }
 
-  
     return (
     <section>
         <h2>Discover Similar items:</h2>
-        <div>  
+        <div className='productsContainer'>  
             {
                 productsByCategory?.filter(cbFilter).map(prod => (
                     <ProductCard 
-                        key={prod?._id}
+                        key={prod.id}
                         prod={prod}
                     />
                 ))
